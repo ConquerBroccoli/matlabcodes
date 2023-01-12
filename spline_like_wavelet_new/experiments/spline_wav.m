@@ -43,11 +43,6 @@ for i=1:t
     N=length(nW);
     W=rD^(-1/2)*nW*rD^(-1/2);
     ncoord=ncoord(diag(K)==1,:);
-%     iG=gsp_graph(nW);
-%     iG.coords=ncoord;
-    %sparsification
-%     Q=round(16*N*log(N));
-%     W=sparsify(N,rW,Q,rL);
     toc
 
     %save results
