@@ -28,7 +28,7 @@ gsp_plot_signal(G,signal,param);title('Original Signal')
 
 %% decomposition
 layers=2; %number of layers
-[results,approx]=spline_wav(layers,signal,W,G);
+[results,approx]=spline_wav(layers,signal,W,G,1);
 
 %% reconstruction
 tmpr=results;
