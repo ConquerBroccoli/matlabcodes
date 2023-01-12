@@ -48,7 +48,7 @@ plot(u'*signal);title('GFT of the Original Signal')
 
 %% decomposition
 layers=2; %number of layers
-[results,approx]=spline_wav(layers,signal,W);
+[results,approx]=spline_wav(layers,signal,W,1);
 
 %% reconstruction
 tmpr=results;
